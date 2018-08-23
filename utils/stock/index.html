@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+	<title>股票分析结果</title>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 引入样式 -->
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	
+</head>
+<body>
+	<div id="app">
+		<el-tabs tab-position="top" v-model="activeName" @tab-click="handleClick">
+		    <el-tab-pane label="明天该出手的股" name="first">
+		    	<el-alert title="" type="info" :closable="false">今天为：<span class="font-color-red">{{today}}</span></el-alert>
+		    	<el-alert title="" type="info" :closable="false">下列<span class="font-color-red">{{sell.length}}</span>只股明天会<span class="font-color-red">先涨后跌</span>，然后一个周期内（3天左右）<span class="font-color-red">持续下跌</span></el-alert>
+		    	<el-table :data="sell">
+		    	    <el-table-column prop="code" label="代码"></el-table-column>
+		    	    <el-table-column prop="name" label="名称"></el-table-column>
+		    	    <el-table-column prop="changepercent" label="今日涨/跌幅" sortable></el-table-column>
+		    	</el-table>
+		    </el-tab-pane>
+		    <el-tab-pane label="明天该入手的股" name="second">
+		    	<el-alert title="" type="info" :closable="false">今天为：<span class="font-color-red">{{today}}</span></el-alert>
+		    	<el-alert title="" type="info" :closable="false">下列<span class="font-color-red">{{buy.length}}</span>只股明天会<span class="font-color-red">先跌后涨</span>，然后一个周期内（3天左右）<span class="font-color-red">持续上涨</span></el-alert>
+		    	<el-table :data="buy">
+		    	    <el-table-column prop="code" label="代码"></el-table-column>
+		    	    <el-table-column prop="name" label="名称"></el-table-column>
+		    	    <el-table-column prop="changepercent" label="今日涨/跌幅" sortable></el-table-column>
+		    	</el-table>
+		    </el-tab-pane>
+		</el-tabs>
+	</div>
+
+
+
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/vue/2.5.8/vue.js"></script>
+	<!-- 引入组件库 -->
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

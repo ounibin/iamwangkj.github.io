@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>高压锅</title>
+</head>
+<body>
+	<h1>高压锅ppi计算</h1>
+	<p>输入屏幕分辨率和大小之后按回车或点击“开始计算”按钮，即可获得ppi</p>
+	<span>屏幕分辨率：</span><input type="number" id="a" value="1920"> X <input type="number" id="b" value="1080">
+	<br>
+	<span>屏幕大小：</span><input type="number" id="c" value="23.6">英寸
+	<button onclick="printPPI()">开始计算</button>
+	<p>该分辨率的ppi为：<span id="ppiResult" style="color: red">93.3</span></p>
+	<hr>
+	<div>
+		<p>iphone5：326ppi（视网膜）</p>
+		<p>小米air13笔记本：166ppi</p>
+	</div>
+
+	<script>
+		function getPPI(width, height, inch){
+			var ppi = Math.sqrt(width*width+height*height)/inch;
+			console.log('ppi=', ppi);
+			return ppi;
+		}
+
+		function printPPI(){
+			var a = document.getElementById('a').value;
+			var b = document.getElementById('b').value;
+			var c = document.getElementById('c').value;
+			console.log(a, b, c);
+			let ppi = getPPI(a, b, c);
+			document.getElementById('ppiResult').innerText = ppi.toFixed(1);
+		}
+
+		document.getElementById('c').onkeydown =  function(event){
+			if (event.keyCode == 13) {
+				printPPI();
+			}
+		}
+		
+	</script>
+</body>
+</html>

@@ -4,9 +4,11 @@ node_js: 14
 cache: npm
 branches:
   only: master # build master branch only
-script: hexo generate # generate static files
+script: 
+  - npm run build # generate static files
 deploy:
   provider: pages
+  target_branch: 'gh-pages'
   skip-cleanup: false
   github-token: $GH_TOKEN
   keep-history: true

@@ -1,16 +1,16 @@
-author: yanm1ng # 作者
-description: yanm1ng's blog
-keyword: hexo-theme, vuejs
+author: wangkj # 作者
+description: wangkj's blog
+keyword: hexo-theme
 
-excerpt_link: Read more
+excerpt_link: 查看全文
 
 menu:
- Home: /
- Series: /series/
- Tags: /tags/
- Archives: /archives/
- Projects: /project/
- About: /about/
+ 首页: /
+ 分类: /categories/
+ 标签: /tags/
+#  Archives: /archives/
+#  Projects: /project/
+#  About: /about/
 
 # highlight
 highlight:
@@ -19,11 +19,11 @@ highlight:
 # catalog
 catalog: true
 
-# donate
+# donate，显示赞赏
 donate: true
 
-# qrcode
-qrcode: true
+# qrcode，文章末尾的分享二维码
+qrcode: false
 
 # comment
 # you can set utterances, gitment, uyan or disqus

@@ -6,9 +6,9 @@
 title: wangkj的笔记
 subtitle: ''
 description: ''
-keywords:
+keywords: 
 author: wangkj
-language: cn
+language: zh-CN
 timezone: ''
 
 # URL
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -97,7 +97,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: vexo
+# 主题默认landscape，insulin首页加载太慢，vexo分类和标签页不能正常读取，keep的分类、标签没有边栏目录
+# theme: light_cn
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

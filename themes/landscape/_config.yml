@@ -29,7 +29,7 @@ sidebar: right
 widgets:
 - category
 - tag
-- tagcloud
+# - tagcloud     边栏的标签云
 - archive
 - recent_posts
 

@@ -1,11 +1,13 @@
 ---
 layout: categories
 title: 深入了解-h5中的video标签
-date: 2022-04-29 00:20:16
-categories: ['前端']
-tags: ['深入了解系列']
+date: 2022-04-29 10:20:16
+categories: 
+  - 前端
+tags: 
+  - '深入了解系列'
 ---
-video标签的自动播放（https://developer.chrome.com/blog/autoplay/）
+video标签的自动播放，https://developer.chrome.com/blog/autoplay/
 在静音情况下是可以的，但不是静音情况，需要用户交互后，才能播放。
 
 

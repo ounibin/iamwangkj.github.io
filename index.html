@@ -72,7 +72,7 @@
     <article id="categories-深入了解-h5中的video标签" class="h-entry article article-type-categories" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/04/29/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3-h5%E4%B8%AD%E7%9A%84video%E6%A0%87%E7%AD%BE/" class="article-date">
-  <time class="dt-published" datetime="2022-04-29T00:20:16.000Z" itemprop="datePublished">2022-04-29</time>
+  <time class="dt-published" datetime="2022-04-29T10:20:16.000Z" itemprop="datePublished">2022-04-29</time>
 </a>
     
   <div class="article-category">
@@ -95,7 +95,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>video标签的自动播放（<a target="_blank" rel="noopener" href="https://developer.chrome.com/blog/autoplay/%EF%BC%89">https://developer.chrome.com/blog/autoplay/）</a><br>在静音情况下是可以的，但不是静音情况，需要用户交互后，才能播放。</p>
+        <p>video标签的自动播放，<a target="_blank" rel="noopener" href="https://developer.chrome.com/blog/autoplay/">https://developer.chrome.com/blog/autoplay/</a><br>在静音情况下是可以的，但不是静音情况，需要用户交互后，才能播放。</p>
 <p>直播流：<br>HTML5中video标签播放m3u8，遇到问题是：PC机上浏览器都不能访问（IE11，Chrome，Firefox，Opera，Safari），但安卓手机中的浏览器可以正常使用。</p>
 <p>m3u8在chrome不能播放，jdapp中可以。</p>
 <p>华为 Nova5 Pro安卓9<br>谷歌手机，安卓12WiFi环境下，无静音键，不自动播放<br>安卓11系统的是小米11，WiFi环境下，无静音键，不自动播放</p>
@@ -117,12 +117,412 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://iamwangkj.github.io/2022/04/29/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3-h5%E4%B8%AD%E7%9A%84video%E6%A0%87%E7%AD%BE/" data-id="cl2kdpu0y000298ra33k0a29d" data-title="深入了解-h5中的video标签" class="article-share-link">分享</a>
+      <a data-url="https://iamwangkj.github.io/2022/04/29/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3-h5%E4%B8%AD%E7%9A%84video%E6%A0%87%E7%AD%BE/" data-id="cl2kotget00098wp68m68ck87" data-title="深入了解-h5中的video标签" class="article-share-link">分享</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E7%B3%BB%E5%88%97/" rel="tag">深入了解系列</a></li></ul>
 
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-黑苹果安装教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/09/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2021-09-09T12:45:04.000Z" itemprop="datePublished">2021-09-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/">软件应用</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/09/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">黑苹果安装教程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>视频教学：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=QMUvZwG2y1Y">https://www.youtube.com/watch?v=QMUvZwG2y1Y</a><br>具体步骤如下：</p>
+<ol>
+<li><p>烧mac os到u盘<br>使用软件TransMac，用该app格式化u盘，再烧mac os到该u盘（主要为了mac recovery）</p>
+</li>
+<li><p>格式化ssd<br>分区表转GUID格式<br>建立分区：ESP(300m), MSR和NTFS格式的普通分区即可。<br>MBR分区：Microsoft Reserved Partition，缩写MSR）即Microsoft 保留 (MSR) 分区。<br>ESP分区：是一个独立于操作系统之外的分区，操作系统被引导之后，就不再依赖它。这使得 ESP 非常适合用来存储那些系统级的维护性的工具和数据，比如：引导管理程序、驱动程序、系统维护工具、系统备份等，甚至可以在 ESP 里安装一个特殊的操作系统（SlaTaz Linux? PuppyLinux? Win PE?）</p>
+</li>
+</ol>
+<ol start="3">
+<li><p>安装mac os到ssd<br>启动烧有mac os的u盘，boot macOS install xxx（系统版本号），进入recovery，用苹果的磁盘工具抹掉硬盘，将硬盘格式转为APFS。<br>然后，在recovery中用苹果安装工具将U盘中的mac os安装到ssd，安装完重启，<br>boot macOS install prebooter from preboot<br>boot macOS from xxxx（ssd）</p>
+</li>
+<li><p>将U盘的引导复制到ssd（EFI就是启动引导文件）<br>设置ssd为第一启动盘，然后用u盘进入pe工具，将u盘中EFI文件夹复制到ssd的ESP分区下的EFI文件夹（如果ssd没有esp分区，就自己建一个），拔掉u盘，重启即可。</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://iamwangkj.github.io/2021/09/09/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" data-id="cl2kotgeu000c8wp6b4vh9qyh" data-title="黑苹果安装教程" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-服务端渲染SSR" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/06/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93SSR/" class="article-date">
+  <time class="dt-published" datetime="2021-06-22T08:06:12.000Z" itemprop="datePublished">2021-06-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/06/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93SSR/">服务端渲染SSR</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>在浏览器端渲染(CSR)遇到的一些问题，如首屏加载资源过多，爬虫不能精准抓取到页面信息等。为了解决这些问题，出现一个名字：服务端渲染（SSR）。啥是服务端渲染呢？我们一些来研究研究。</p>
+</blockquote>
+<h2 id="什么是服务器端渲染？"><a href="#什么是服务器端渲染？" class="headerlink" title="什么是服务器端渲染？"></a>什么是服务器端渲染？</h2><p>服务器端渲染，Server Side Render，简称SSR。我们的web页面，在浏览器中渲染有2中方式，一种是先加载初始html，再通过ajax去拉取数据进行再次渲染；另一种就是服务端渲染（SSR），就是将同一个组件渲染为服务器端的 HTML 字符串，将它们直接发送到浏览器，最后将这些静态标记”激活”为客户端上完全可交互的应用程序。<br><img src="https://img11.360buyimg.com/imagetools/jfs/t1/190202/10/9692/240905/60d1d234Ec02aaa72/b9ca81af50a305c1.jpg"></p>
+<h2 id="为什么使用服务器端渲染？"><a href="#为什么使用服务器端渲染？" class="headerlink" title="为什么使用服务器端渲染？"></a>为什么使用服务器端渲染？</h2><p>与传统 SPA (单页应用程序 (Single-Page Application)) 相比，服务器端渲染 (SSR) 的优势主要在于：</p>
+<ul>
+<li>更好的 SEO，由于搜索引擎爬虫抓取工具可以直接查看完全渲染的页面。<br>截至目前，Google 和 Bing 可以很好对同步 JavaScript 应用程序进行索引。在这里，同步是关键。如果你的应用程序初始展示 loading 菊花图，然后通过 Ajax 获取内容，抓取工具并不会等待异步完成后再行抓取页面内容。也就是说，如果 SEO 对你的站点至关重要，而你的页面又是异步获取内容，则你可能需要服务器端渲染(SSR)解决此问题。</li>
+<li>更快的内容到达时间 (time-to-content)，特别是对于缓慢的网络情况或运行缓慢的设备。<br>无需等待所有的 JavaScript 都完成下载并执行，才显示服务器渲染的标记，所以你的用户将会更快速地看到完整渲染的页面。通常可以产生更好的用户体验，并且对于那些「内容到达时间(time-to-content) 与转化率直接相关」的应用程序而言，服务器端渲染 (SSR) 至关重要。  </li>
+</ul>
+<p>使用服务器端渲染 (SSR) 时还需要有一些权衡之处：</p>
+<ul>
+<li>开发条件所限。<br>浏览器特定的代码，只能在某些生命周期钩子函数 (lifecycle hook) 中使用；一些外部扩展库 (external library) 可能需要特殊处理，才能在服务器渲染应用程序中运行。</li>
+<li>涉及构建设置和部署的更多要求。<br>与可以部署在任何静态文件服务器上的完全静态单页面应用程序 (SPA) 不同，服务器渲染应用程序，需要处于 Node.js server 运行环境（比如：nextjs）。</li>
+<li>更多的服务器端负载。<br>在 Node.js 中渲染完整的应用程序，显然会比仅仅提供静态文件的 server 更加大量占用 CPU 资源 (CPU-intensive - CPU 密集)，因此如果你预料在高流量环境 (high traffic) 下使用，请准备相应的服务器负载，并明智地采用缓存策略。</li>
+</ul>
+<p>在对我们的应用程序使用服务器端渲染 (SSR) 之前，应该思考一个问题是，是否真的需要它。这主要取决于内容到达时间 (time-to-content) 对应用程序的重要程度。例如，如果你正在构建一个内部仪表盘，初始加载时的额外几百毫秒并不重要，这种情况下去使用服务器端渲染 (SSR) 将是一个小题大作之举。然而，内容到达时间 (time-to-content) 要求是绝对关键的指标，在这种情况下，服务器端渲染 (SSR) 可以帮助你实现最佳的初始加载性能。</p>
+<h2 id="服务器端渲染-vs-预渲染-SSR-vs-Prerendering"><a href="#服务器端渲染-vs-预渲染-SSR-vs-Prerendering" class="headerlink" title="服务器端渲染 vs 预渲染 (SSR vs Prerendering)"></a>服务器端渲染 vs 预渲染 (SSR vs Prerendering)</h2><p>如果你调研服务器端渲染 (SSR) 只是用来改善少数营销页面（例如 /, /about, /contact 等）的 SEO，那么你可能需要预渲染。无需使用 web 服务器实时动态编译 HTML，而是使用预渲染方式，在构建时 (build time) 简单地生成针对特定路由的静态 HTML 文件。优点是设置预渲染更简单，并可以将你的前端作为一个完全静态的站点。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://iamwangkj.github.io/2021/06/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93SSR/" data-id="cl2kotgeq00068wp6btiuf5h4" data-title="服务端渲染SSR" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-深入了解-Request-Headers中的referer" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/06/20/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3-Request-Headers%E4%B8%AD%E7%9A%84referer/" class="article-date">
+  <time class="dt-published" datetime="2021-06-20T11:54:51.000Z" itemprop="datePublished">2021-06-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/06/20/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3-Request-Headers%E4%B8%AD%E7%9A%84referer/">深入了解-Request-Headers中的referer</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>请求头中有很多的参数，每个参数都要自己独特的作用。http请求的头信息里面，Referer是一个常见字段，提供访问来源的信息。很多开发者知道这个字段，但是说不清它的具体细节。我们一起来深入了解下Request-Headers中的referer。</p>
+<h2 id="referer是什么？"><a href="#referer是什么？" class="headerlink" title="referer是什么？"></a>referer是什么？</h2><p>首先，我们先了解一下referer是什么？</p>
+<ol>
+<li>referer是http请求的header，用于指明当前请求的来源。通过这个信息，我们可以知道访客是从哪里来的。</li>
+<li>这对于Web Analytics非常重要，服务端可以用于分析不同渠道流量分布、用户搜索的关键词等，进行统计分析、日志记录以及缓存优化等。<br><img src="https://img10.360buyimg.com/imagetools/jfs/t1/187639/38/9641/279726/60d1d2c8E1dcaa835/42916150fa8e10c9.jpg"></li>
+</ol>
+<h2 id="为什么要使用referer？"><a href="#为什么要使用referer？" class="headerlink" title="为什么要使用referer？"></a>为什么要使用referer？</h2><p>Referer字段实际上告诉了服务器，用户在访问当前资源之前的位置。这往往可以用来用户跟踪。<br>举例： </p>
+<ol>
+<li>有些网站不允许图片外链，只有自家的网站才能显示图片，外部网站加载图片就会报错。它的实现就是基于Referer字段，如果该字段的网址是自家网址，就放行。</li>
+<li>定制Referer字段。比如社交网站上，用户在对话中提到某个网址。这时，不希望暴露用户所在的原始网址，但是可以暴露社交网站的域名，让对方知道，是我贡献了你的流量。</li>
+</ol>
+<h2 id="怎么使用referer？"><a href="#怎么使用referer？" class="headerlink" title="怎么使用referer？"></a>怎么使用referer？</h2><p>客户端发送请求的时候，自主决定是否加上该字段。有些涉及隐私，很多时候不适合发送Referer字段。<br>那什么时候携带，什么时候不携带呢？</p>
+<ul>
+<li>携带：</li>
+</ul>
+<ol>
+<li>用户点击网页上的链接。</li>
+<li>用户发送表单。</li>
+<li>网页加载静态资源，比如加载图片、脚本、样式。<br><img src="https://img13.360buyimg.com/imagetools/jfs/t1/174214/16/16360/314123/60d1d288E20a1f5de/f7294c1fda3b4e82.png"><br><img src="https://img13.360buyimg.com/imagetools/jfs/t1/174473/28/16199/347124/60d1d288E4a82efe4/834ca760e74e6df9.png"><br><img src="https://img14.360buyimg.com/imagetools/jfs/t1/193582/17/9578/329178/60d1d287E3e459d46/c6823b3d54091db2.png"></li>
+</ol>
+<ul>
+<li>不携带：</li>
+</ul>
+<ol>
+<li>用户在地址栏输入网址，或者选中浏览器书签。</li>
+<li>从https到http；与referrer policy的默认值一个意思。</li>
+<li>使用重定向</li>
+</ol>
+<p>除了浏览器默认的行为，我们也可以改变默认的referer行为，从而进行隐藏referer（涉及隐私，很多时候不适合发送Referer字段）。<br>比如：</p>
+<ol>
+<li>使用rel属性<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;xxx&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;noreferrer&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>跳转<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>使用重定向，链接的时候，不要直接跳转，而是通过一个重定向网址，就像下面这样。<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span>  <span class="attr">href</span>=<span class="string">&quot;/index.html?url=http%3A%2F%2Fxxx.com&quot;</span>&gt;</span>xxx.com<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+上面网址中，先跳转到/index.html，然后再跳转到目标网址。这时，Referer字段就不会包含原始网址。</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://iamwangkj.github.io/2021/06/20/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3-Request-Headers%E4%B8%AD%E7%9A%84referer/" data-id="cl2kotges00088wp6g3n370xg" data-title="深入了解-Request-Headers中的referer" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-console的正确打开方式" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/30/console%E7%9A%84%E6%AD%A3%E7%A1%AE%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/" class="article-date">
+  <time class="dt-published" datetime="2021-03-30T15:58:37.000Z" itemprop="datePublished">2021-03-30</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/03/30/console%E7%9A%84%E6%AD%A3%E7%A1%AE%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/">console的正确打开方式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>在前端开发这个领域中，相信各位大部分使用的浏览器是chrome，我也是，chrome对于调试脚本及调试前端样式都有它比其它浏览器有优秀的地方。当然console.log对大家来说，也是很熟悉的方法。但是今天要介绍的是console的各种其他用法。</p>
+<p>console有很多方法，如图</p>
+<p><img src="https://img10.360buyimg.com/imagetools/jfs/t1/173757/9/1254/71234/6063dcefEfdad1229/53ab430ca6de66a7.png"></p>
+<h2 id="基础打印"><a href="#基础打印" class="headerlink" title="基础打印"></a>基础打印</h2><p>一、基础方式<br>1、console.log 用于输出普通信息；<br>2、console.info 用于输出提示性信息；<br>3、console.error 用于输出错误信息；<br>4、console.warn 用于输出警示信息；  </p>
+<p><img src="https://img10.360buyimg.com/imagetools/jfs/t1/168081/7/15964/20265/6063dcf0E39ee0a3e/d05c68ddb56b7d39.png"></p>
+<p>二、占位符<br>支持四种占位符：字符（%s）、整数（%d）、浮点数（%f）、对象（%o）。<br>%d：如果输入浮点类型，会被转化为整数。</p>
+<p><img src="https://img13.360buyimg.com/imagetools/jfs/t1/157946/5/16301/14142/6063dcf0E59254143/348573ba10c29efa.png"></p>
+<h2 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h2><p>console.dirxml(node)<br>用于显示网页的某个节点（node）所包含的html/xml代码。现在console.log也有这样的效果。</p>
+<p><img src="https://img14.360buyimg.com/imagetools/jfs/t1/156832/31/18972/102001/6063dcf0E4f28a8e5/3217b4e4f6af5d5a.png"></p>
+<p><img src="https://img12.360buyimg.com/imagetools/jfs/t1/157523/10/16458/14720/6063dcf1E077d8dfa/5739561102f591fe.png"></p>
+<h2 id="组"><a href="#组" class="headerlink" title="组"></a>组</h2><ol>
+<li>console.group(label)<br>参数为标记名，做标记，输出一组信息的开头。在 Web控制台上创建一个新的分组，随后输出到控制台上的内容都会被添加一个缩进，表示该内容属于当前分组，直到调用console.groupEnd()之后，当前分组结束。</li>
+</ol>
+<p><img src="https://img11.360buyimg.com/imagetools/jfs/t1/167121/23/15589/17178/6063dcf1E9e9d4704/98b7d09bde915046.png"></p>
+<ol start="2">
+<li>console.groupCollapsed(label)<br>在 Web控制台上创建一个新的分组，随后输出到控制台上的内容都会被添加一个缩进，表示该内容属于当前分组，直到调用console.groupEnd() 之后，当前分组结束。和 console.group()方法的不同点是，新建的分组默认是折叠的，用户必须点击一个按钮才能将折叠的内容打开。</li>
+</ol>
+<p><img src="https://img10.360buyimg.com/imagetools/jfs/t1/162397/40/15498/20995/6063dcf0E4f91c882/9a5df44571a6a1bc.png"></p>
+<ol start="3">
+<li>console.groupEnd()<br>结束一组输出信息，配合group和groupEnd方法来一起使用，可以输入各种各样的不同形式的输出信息。</li>
+</ol>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>console.table(data [, columns])<br>将数据以表格的形式显示，需要一个必须参数 data，data 必须是一个数组或者是一个对象；可选参数 columns，columns包含列的名称的数组。<br>它会把数据 data 以表格的形式打印出来。数组中的每一个元素（或对象中可枚举的属性）将会以行的形式显示在表格中。表格的第一列是 index。<br>如果数据 data 是一个数组，那么这一列的单元格的值就是数组的索引。<br>如果数据是一个对象，那么它们的值就是各对象的属性名称。</p>
+<p><img src="https://img14.360buyimg.com/imagetools/jfs/t1/161204/28/15769/22928/6063e273E1b408ac3/94accdda18e1837f.png"></p>
+<h2 id="断言"><a href="#断言" class="headerlink" title="断言"></a>断言</h2><p>console.assert(expression, message)<br>第一个参数为需要进行assert的结果，正常情况下应当为true；第二个参数则为出错时在控制台上打印的错误信息。</p>
+<p><img src="https://img14.360buyimg.com/imagetools/jfs/t1/172153/37/1180/26610/6063dcf1E6e069c8c/75a610d26e044ba4.png"></p>
+<h2 id="计时"><a href="#计时" class="headerlink" title="计时"></a>计时</h2><ol>
+<li>console.time(timerName)</li>
+<li>console.timeEnd(timerName)<br>跟踪某一个操作的占用时长。每一个计时器必须拥有唯一的名字，页面中最多能同时运行10000个计时器。当以此计时器名字为参数调用 console.timeEnd() 时，浏览器将以毫秒为单位，输出对应计时器所经过的时间。</li>
+</ol>
+<p><img src="https://img12.360buyimg.com/imagetools/jfs/t1/165101/37/15222/15808/6063dcf1E6196126a/a631cecb7aaa4a01.png"></p>
+<ol start="3">
+<li>console.timeLog(label)<br>在控制台输出计时器的值，该计时器必须已经通过 console.time() 启动。</li>
+</ol>
+<p><img src="https://img10.360buyimg.com/imagetools/jfs/t1/159282/3/16276/36035/6063e7b7Ea04b4437/75d5f67c6d27a37b.png"></p>
+<h1 id="非标准"><a href="#非标准" class="headerlink" title="非标准"></a>非标准</h1><p><strong>以下特性是非标准的，请尽量不要在生产环境中使用它！</strong></p>
+<h2 id="计次"><a href="#计次" class="headerlink" title="计次"></a><del>计次</del></h2><p>console.count(label)<br>输出 count() 被调用的次数。此函数接受一个可选参数 label。</p>
+<p><img src="https://img14.360buyimg.com/imagetools/jfs/t1/157718/33/15871/29989/6063dcf1E420a118f/901b7cc4a8010ef9.png"></p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a><del>目录</del></h2><p>console.dir()<br>在控制台中显示指定JavaScript对象的属性，并通过类似文件树样式的交互列表显示。现在console.log也有这样的效果。</p>
+<p><img src="https://img11.360buyimg.com/imagetools/jfs/t1/166579/25/15209/13609/6063e633E91c531a4/85c133cf4b9a5922.png"></p>
+<h2 id="记录性能描述信息"><a href="#记录性能描述信息" class="headerlink" title="记录性能描述信息"></a><del>记录性能描述信息</del></h2><p>console.profile(profileName)<br>console.profileEnd(profileName)<br>第一个：开始记录性能描述信息；第二个：结束记录性能描述信息。这2个配合使用来查看资源的消耗情况。</p>
+<p>以前旧版本的chrom可以使用，如下:</p>
+<p><img src="https://img12.360buyimg.com/imagetools/jfs/t1/155843/24/18982/45880/6063dcf2E312e989c/b80343745b563a81.png"></p>
+<p>当前chrome的这个方法已无效，如下:<br><img src="https://img14.360buyimg.com/imagetools/jfs/t1/165447/2/14935/38664/6063dcf2E1929ad90/704ab212968e905b.png"></p>
+<h2 id="记录时间戳"><a href="#记录时间戳" class="headerlink" title="记录时间戳"></a><del>记录时间戳</del></h2><p>console.timeStamp(label)<br>向浏览器的 Performance 或者 Waterfall 工具添加一个标记。这样可以让你将代码中的一个点和其他在时间轴上已记录的事件相关联，例如布局事件和绘制事件等。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://iamwangkj.github.io/2021/03/30/console%E7%9A%84%E6%AD%A3%E7%A1%AE%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/" data-id="cl2kotgej00018wp6d0j5arra" data-title="console的正确打开方式" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-git分支管理" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/09/git%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" class="article-date">
+  <time class="dt-published" datetime="2020-12-09T16:21:39.000Z" itemprop="datePublished">2020-12-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/12/09/git%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/">git分支管理</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>作为一名程序员，必定会用到版本管理系统。我们这里就以git为例。<br>分支怎么管理？这里举一个具体的例子，原本有一个项目，版本发布流程是这样的：<br>在master开发，<br>发布新版本时，切一个分支v1.0.0，然后发布，<br>再有新版本时，切一个分支v1.0.1，然后发布，<br>以此类推。<br>当我们的版本非常多时，就会有类似这样的情况（当然，这里是比较夸张的）<br><img src="https://img13.360buyimg.com/imagetools/jfs/t1/132523/7/19340/101969/5fd0c3d5Ebb874c43/6acacf342025dd29.png"></p>
+<p>分支会变的太多，难以管理，所以需要一个更好的方案，来解决这样的问题。<br>我比较赞同Vincent Driessen提出了一个<a target="_blank" rel="noopener" href="https://nvie.com/posts/a-successful-git-branching-model">分支管理的策略</a>，可以使得版本库的演进保持简洁，主干清晰，各个分支各司其职、井井有条。</p>
+<h3 id="1、主分支master："><a href="#1、主分支master：" class="headerlink" title="1、主分支master："></a>1、主分支master：</h3><p>代码库有且仅有一个主分支。所有提供给用户使用的正式版本，都在这个主分支上发布。<br><img src="https://img14.360buyimg.com/imagetools/jfs/t1/153087/34/9100/149987/5fd0c3d5E3dc2ce79/59a419d6a715c7af.png"></p>
+<h3 id="2、开发分支dev："><a href="#2、开发分支dev：" class="headerlink" title="2、开发分支dev："></a>2、开发分支dev：</h3><p>主分支只用来分布重大版本，日常开发应该在另一条分支上完成。我们把开发用的分支，叫做dev。<br>这个分支用来开发最新的代码，如果要发布正式的，就合并到master，然后给master打tag。</p>
+<ul>
+<li>master合并dev分支  </li>
+<li>git checkout master  </li>
+<li>git merge dev</li>
+</ul>
+<ul>
+<li>打tag：git tag v1.0.0   </li>
+<li>指定commit打tag：git tag v1.0.0 f52c633   </li>
+<li>显示某个tag对应的具体信息：git show v1.0.0   </li>
+<li>列出所有的tag：git tag   </li>
+<li>删除tag：git tag -d v1.0.0   </li>
+</ul>
+<p>给分支打tag<br><img src="https://img11.360buyimg.com/imagetools/jfs/t1/152787/16/9170/149283/5fd0c3d5E2fec57bd/c1d8598c78adec95.png"><br>显示某个tag对应的具体信<br><img src="https://img10.360buyimg.com/imagetools/jfs/t1/154353/28/9068/79629/5fd0c3d5E3d2fc3a1/6b8eb6ffaaf1fca7.png"></p>
+<h3 id="3、临时分支："><a href="#3、临时分支：" class="headerlink" title="3、临时分支："></a>3、临时分支：</h3><p>一些修复较大bug、开发较大功能时，在这些分支上处理。当完成后，合并到dev，并删除改分支，保持分支清爽。<br>分支命名规范：fixbug-*、feature-*  </p>
+<ul>
+<li>切换分支：git branch fixbug-img_error   </li>
+<li>回到dev，合并：git checkout dev，git merge fixbug-img_error   </li>
+<li>删除分支：git branch -d fixbug-img_error   </li>
+<li>删除本地分支：git branch -d fixbug-img_error   </li>
+<li>删除远程分支：git branch -r -d origin/fixbug-img_error</li>
+</ul>
+<p>参考：<br><a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2012/07/git.html">https://www.ruanyifeng.com/blog/2012/07/git.html</a><br><a target="_blank" rel="noopener" href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://iamwangkj.github.io/2020/12/09/git%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/" data-id="cl2kotgel00028wp619iqer6p" data-title="git分支管理" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-写作时美化我们的代码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/10/14/%E5%86%99%E4%BD%9C%E6%97%B6%E7%BE%8E%E5%8C%96%E6%88%91%E4%BB%AC%E7%9A%84%E4%BB%A3%E7%A0%81/" class="article-date">
+  <time class="dt-published" datetime="2020-10-14T13:12:21.000Z" itemprop="datePublished">2020-10-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/10/14/%E5%86%99%E4%BD%9C%E6%97%B6%E7%BE%8E%E5%8C%96%E6%88%91%E4%BB%AC%E7%9A%84%E4%BB%A3%E7%A0%81/">写作时美化我们的代码</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>俗话说：工欲善其事，必先利其器。这是最近在写markdown时，发现自己的代码示例没有别人的好看，所以找到一些美化代码的方式，分享给大家。<br>最近在写markdown时需要展示代码片段，发现自己的代码示例没有别人的好看，所以找到一些美化代码的方式，分享给大家。</p>
+</blockquote>
+<p>那么有哪些程序代码的工具呢？</p>
+<ol>
+<li><p>Polacode<br>Polacode 是一个VS Code扩展，平时使用VS Code开发，可以直接从VS Code获取漂亮的代码屏幕截图。<br><img src="https://storage.jd.com/jelly-uploads/polacodeE4BDBFE794A8_1600923140093_a95.gif?Expires=1651249529&AccessKey=4u4pXinTgE4qchqa&Signature=Wky4L37fClImkaXuUMQxo/WvE5I="></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://carbon.now.sh/">Carbon</a><br>这是一款网页版，复制代码后选择美化方案，完成后即可导出精美图片。<br>开始输入或将文件拖入文本区域以开始使用。<br><img src="https://img11.360buyimg.com/ling/jfs/t1/153433/9/639/668002/5f6c263aE5198c659/5aded62c89f90336.png"></p>
+</li>
+</ol>
+<ol start="3">
+<li><a target="_blank" rel="noopener" href="https://codeimg.io/">codeimg.io</a><br>codeimg 与 carbon.now.sh 类似，较好的是codeimg有社交媒体模板，有更多选项，不必担心画布大小。<br>这是使用codeimg.io创建的 Facebook 模板</li>
+</ol>
+<p>这是最近写文章发现美化代码的几种方式，为之后的发表文章做一些准备。<br>工欲善其事，必先利其器。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://iamwangkj.github.io/2020/10/14/%E5%86%99%E4%BD%9C%E6%97%B6%E7%BE%8E%E5%8C%96%E6%88%91%E4%BB%AC%E7%9A%84%E4%BB%A3%E7%A0%81/" data-id="cl2kotgep00058wp6321a2vss" data-title="写作时美化我们的代码" class="article-share-link">分享</a>
+      
+      
+      
     </footer>
   </div>
   
@@ -174,7 +574,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://iamwangkj.github.io/2019/12/24/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-id="cl2kdpu0v000198rahox8de3e" data-title="hexo使用教程" class="article-share-link">分享</a>
+      <a data-url="https://iamwangkj.github.io/2019/12/24/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-id="cl2kotgeo00048wp6esgx7873" data-title="hexo使用教程" class="article-share-link">分享</a>
       
       
       
@@ -196,7 +596,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/">软件应用</a></li></ul>
     </div>
   </div>
 
@@ -214,18 +614,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E7%B3%BB%E5%88%97/" style="font-size: 10px;">深入了解系列</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">九月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li></ul>
     </div>
   </div>
 
@@ -242,7 +633,19 @@
           </li>
         
           <li>
-            <a href="/2019/12/24/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">hexo使用教程</a>
+            <a href="/2021/09/09/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">黑苹果安装教程</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/22/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93SSR/">服务端渲染SSR</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/20/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3-Request-Headers%E4%B8%AD%E7%9A%84referer/">深入了解-Request-Headers中的referer</a>
+          </li>
+        
+          <li>
+            <a href="/2021/03/30/console%E7%9A%84%E6%AD%A3%E7%A1%AE%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/">console的正确打开方式</a>
           </li>
         
       </ul>

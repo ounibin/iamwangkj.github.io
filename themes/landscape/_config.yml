@@ -27,11 +27,11 @@ copyright:
 # Sidebar
 sidebar: right
 widgets:
+- recent_posts
 - category
 - tag
 # - tagcloud     边栏的标签云
 - archive
-- recent_posts
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
